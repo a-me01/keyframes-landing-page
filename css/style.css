@@ -1,0 +1,90 @@
+
+body {
+    background-image: url(/images/mountains-5689938.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Amatic SC', cursive;
+}
+
+.title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    flex-direction: column;
+}
+
+.nav {
+    display: flex;
+    gap: 25px;
+}
+
+h1{
+    font-size: 100px;
+    margin: 0;
+    padding: 0;
+    color: white;
+
+}
+
+a {
+    font-size: 33px;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 3px;
+    
+}
+
+
+.star1 {
+    background-color: white;
+    width: 45px;
+    height: 2px;
+    position: absolute ;
+    top: -10px;
+    left: 1000px;
+    animation: shoot 3s linear infinite;
+    opacity: 0.5;
+    transform: rotate(30deg);
+   animation-delay: 5s
+}
+
+.star2 {
+    background-color: white;
+    width: 45px;
+    height: 2px;
+    position: absolute ;
+    top: 600px;
+    left: -10px;
+    animation: shoot2 3s linear infinite;
+    opacity: 0.5;
+    transform: rotate(30deg);
+    
+}
+
+
+
+
+@keyframes shoot {
+    10%{
+        transform: rotate(30deg) translate(100vw);
+    }
+    100%{
+        transform: rotate(30deg) translate(100vw);
+    }
+
+}
+
+@keyframes shoot2 {
+    10%{
+        transform: rotate(30deg) translate(33vw);
+    }
+    100%{
+        transform: rotate(30deg) translate(33vw);
+    }
+
+}
+
